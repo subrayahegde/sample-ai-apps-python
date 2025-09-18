@@ -4,7 +4,6 @@ from PIL import Image
 import pytesseract
 from pdf2image import convert_from_path
 from docx import Document
-import gtts
 from io import BytesIO
 import requests
 import json
