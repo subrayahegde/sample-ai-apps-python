@@ -66,7 +66,7 @@ def analyze_risks_with_gemini(text):
         "You are a legal expert. Read the following contract and list all potential risks, liabilities, or unfavorable terms for the party receiving the contract. "
         "Present the risks as a numbered list with a brief explanation for each.\n\nContract Text:\n" + text
     )
-    model = genai.GenerativeModel('gemini-1.5-flash')
+    model = genai.GenerativeModel('gemini-flash-latest')
     response = model.generate_content(prompt)
     return response.text
 
